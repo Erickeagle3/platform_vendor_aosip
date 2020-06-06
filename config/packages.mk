@@ -1,13 +1,14 @@
 # Required packages
 PRODUCT_PACKAGES += \
     MatLog \
+    OmniRecord \
     OmniStyle \
     ThemePicker \
+    Gallery2 \
     AOSiPOverlayStub
 
 ifeq ($(DERP_BUILD_ZIP_TYPE), VANILLA)
 PRODUCT_PACKAGES += \
-    Gallery2 \
     LatinIME \
     messaging
 endif
@@ -55,9 +56,4 @@ PRODUCT_PACKAGES += \
 # Include explicitly to work around GMS issues
 PRODUCT_PACKAGES += \
     libprotobuf-cpp-full \
-    librsjni
-
-# Cutout control overlays
-PRODUCT_PACKAGES += \
-    HideCutout \
-    StatusBarStock
+    librsjni 
